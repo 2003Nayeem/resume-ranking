@@ -1,12 +1,12 @@
 import streamlit as st
 import pandas as pd
-import spacy
+import spacy as sp
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Load NLP model
-nlp = spacy.load('en_core_web_sm')
+nlp = sp.load('en_core_web_sm')
 
 # Streamlit UI
 st.set_page_config(page_title="Resume Screening System", layout="wide")
